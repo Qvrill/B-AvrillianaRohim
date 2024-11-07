@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Control Flow Examples</title>
+</head>
+<body>
+
+  <h1>JavaScript Control Flow Examples</h1>
+  <p>Buka Console di Developer Tools untuk melihat hasilnya.</p>
+
+  <script>
+    let rating = 3;
+    if (rating === 3) {
+      console.log("You are a Superstar");
+    }
+
+    let score = 1;
+    if (score === 3) {
+      console.log("Excellent!");
+    } else if (score === 2) {
+      console.log("Good Job");
+    } else if (score === 1) {
+      console.log("Needs Improvement");
+    } else {
+      console.log("Try Again");
+    }
+
+
+    let fruit = "banana";
+    switch (fruit) {
+      case "apple":
+        console.log("You chose an apple.");
+        break;
+      case "banana":
+        console.log("You chose a banana.");
+        break;
+      case "orange":
+        console.log("You chose an orange.");
+        break;
+      default:
+        console.log("Unknown fruit");
+    }
+
+    console.log("For Loop Output:");
+    for (let i = 1; i <= 5; i++) {
+      console.log(i);
+    }
+
+    let colors = ["red", "green", "blue"];
+    console.log("For...Of Loop Output:");
+    for (let color of colors) {
+      console.log(color);
+    }
+
+    let person = { name: "Alice", age: 25, job: "Engineer" };
+    console.log("For...In Loop Output:");
+    for (let key in person) {
+      console.log(`${key}: ${person[key]}`);
+    }
+
+let count = 0;
+    console.log("While Loop Output:");
+    while (count < 3) {
+      console.log("Count is: " + count);
+      count++;
+    }
+    let number = 0;
+    console.log("Do...While Loop Output:");
+    do {
+      console.log("Number is: " + number);
+      number++;
+    } while (number < 3);
+
+  </script>
+</body>
+</html>

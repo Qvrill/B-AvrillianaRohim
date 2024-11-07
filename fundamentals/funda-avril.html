@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Data Types Example</h1>
+    <p>Open your browser console or check the alert boxes to see the results!</p>
+
+    <script>
+        // 1. String Data Type
+        var name = "Avril"; // String type (Updated name to Avril)
+        console.log("Name: " + name); // Showing in console
+
+        // 2. Number Data Type
+        var age = 20; // Number type (Updated age to 20)
+        alert("Age: " + age); // Showing in alert box
+
+        // 3. Boolean Data Type
+        var isStudent = true; // Boolean type
+        console.log("Is Student: " + isStudent);
+
+        // 4. Object Data Type
+        var person = { name: "Bob", age: 30 }; // Object type
+        console.log("Person Object: ", person);
+
+        // 5. Array Data Type (Added pink color)
+        var colors = ["red", "blue", "green", "pink"]; // Array type (Added pink)
+        alert("Favorite Colors: " + colors.join(", ")); // Join array into a string and show in alert
+
+        // 6. Undefined Data Type
+        var myJob; // Undefined type
+        console.log("Job: " + myJob); // This will show 'undefined' in console
+
+        // 7. Null Data Type
+        var emptyValue = null; // Null type
+        alert("Empty Value: " + emptyValue); // Show null value in alert
+
+        // 8. Symbol (ES6 feature)
+        var sym = Symbol("unique"); // Symbol type (used for unique identifiers)
+        console.log("Symbol: " + sym.toString());
+    </script>
+</body>
+</html>

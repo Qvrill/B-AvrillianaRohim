@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proses Antrian Pembeli</title>
+</head>
+<body>
+
+    <h2>Proses Antrian Pembeli</h2>
+
+    <script>
+        // Antrian awal
+        let antrian = ['ray', 'fiki', 'fadhilla', 'farah'];
+
+        // 1. Datang 1 pembeli yaitu nabila
+        antrian.push('nabila');
+
+        // 2. Datang 2 pembeli yaitu maza dan elsi
+        antrian.push('maza', 'elsi');
+
+        // 3. Antrian terakhir tidak jadi antri dan pulang ke rumah (elsi pulang)
+        antrian.pop();
+
+        // 4. Antrian pertama sudah mendapatkan belanjaannya (ray selesai belanja)
+        antrian.shift();
+
+        // 5. Antrian kedua sudah mendapatkan belanjaannya (fiki selesai belanja)
+        antrian.shift();
+
+        // 6. Datang pembeli baru yang nyerobot antrian yaitu tomi
+        antrian.unshift('tomi');
+
+        // Menampilkan hasil akhir antrian di console
+        console.log(antrian);
+    </script>
+
+</body>
+</html>

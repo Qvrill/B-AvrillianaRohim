@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asynchronous Process and Exception Handling</title>
+</head>
+<body>
+
+  <h1>JavaScript Asynchronous and Exception Handling Examples</h1>
+  <p>Silakan buka Console di Developer Tools untuk melihat hasilnya.</p>
+
+
+  <h2 id="header">Current Time</h2>
+
+  <script>
+ 
+    function myDisplayer(message) {
+      console.log(message);
+    }
+
+    function myFirst(callback) {
+      myDisplayer("Hello");
+      callback();
+    }
+
+    function mySecond() {
+      myDisplayer("Goodbye");
+    }
+
+   
+    myFirst(mySecond);
+
+    console.log("I print first!");
+    setTimeout(() => {
+      console.log("I print after 3 seconds");
+    }, 3000);
+    console.log("I print second!");
+
+    function setTime() {
+      const header = document.getElementById("header");
+      header.textContent = new Date().toString();
+    }
+    setInterval(setTime, 1000); 
+    console.log("Program Finish");
+
+
+    try {
+      let num = 5;
+      num.toUpperCase(); 
+      console.log("An error occurred: " + error.message);
+    }
+
+   
+    function checkAge(age) {
+      if (age < 18) {
+        throw new Error("Age must be at least 18.");
+      }
+      return "Access granted";
+    }
+    try {
+      console.log(checkAge(15));  error
+    } catch (error) {
+      console.log("Error: " + error.message);
+    }
+  </script>
+
+</body>
+</html>

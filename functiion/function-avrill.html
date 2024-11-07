@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Practice</title>
+</head>
+<body>
+    <h1>Latihan Fungsi JavaScript</h1>
+    <p>Silakan buka Console di Developer Tools untuk melihat hasilnya.</p>
+
+    <script>
+        function showHeart() {
+            console.log("<3");
+        }
+
+        showHeart();
+        function calculate(x, y) {
+            return x * y;
+        }
+        console.log(calculate(2, 4)); 
+        console.log(calculate(7, 7)); 
+        console.log(calculate(6, 5)); 
+
+
+        let avril = "unicorn";
+        function watch() {
+            let avril = "bear";
+            console.log(avril);
+        }
+        watch();
+
+        let alfa = "Komodo Dragon";
+        function manageAnimal() {
+            let alfa = "King Cobra";
+            console.log(alfa);
+        }
+        manageAnimal();
+        console.log(alfa);
+
+        const greet = (nama) => `Halo ${nama}!`;
+        console.log(greet("Harry")); // "Halo Harry!"
+        console.log(greet("Hermione")); // "Halo Hermione!"
+    </script>
+</body>
+</html>
